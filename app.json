@@ -2,5 +2,6 @@
 	"name": "Thunder Project",
 	"description": "The composer base for installing Thunder",
 	"repository": "https://github.com/goldquest/thunder-project",
-	"image": "heroku/php"
+	"image": "heroku/php",
+	"addons": ["heroku-postgresql"]
 }
