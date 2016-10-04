@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 docroot/
+web: bin/heroku-php-apache2 docroot/
