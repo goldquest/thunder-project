@@ -3,5 +3,8 @@
 	"description": "The composer base for installing Thunder",
 	"repository": "https://github.com/goldquest/thunder-project",
 	"image": "heroku/php",
-	"addons": ["heroku-postgresql"]
+	"addons": ["heroku-postgresql"],
+	"scripts": {
+		"postdeploy": "drush si -y --db-url=${DATABASE_URL/postgres/pgsql}"
+	}
 }
