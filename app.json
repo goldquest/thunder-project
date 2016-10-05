@@ -5,6 +5,6 @@
 	"image": "heroku/php",
 	"addons": ["heroku-postgresql"],
 	"scripts": {
-		"postdeploy": "drush si -y --db-url=${DATABASE_URL/postgres/pgsql}"
+		"postdeploy": "cd docroot; drush si -y --db-url=${DATABASE_URL/postgres/pgsql}"
 	}
 }
