@@ -1,0 +1,20 @@
+version: '2'
+services:
+    thunder:
+        build: .
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - mysql
+        environment:
+            THUNDER_DB_HOST: mysql
+    mysql:
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: thunder
+            MYSQL_DATABASE: thunder 
+            MYSQL_USER: thunder
+            MYSQL_PASSWORD: thunder
