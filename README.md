@@ -9,7 +9,7 @@ the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
 
 ## Usage
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/goldquest/thunder-project/tree/8.x)
 
 First you need to install [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) and [Node](https://nodejs.org).
 
