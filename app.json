@@ -5,6 +5,6 @@
 	"image": "heroku/php",
 	"addons": ["heroku-postgresql"],
 	"scripts": {
-		"postdeploy": "cd docroot; /usr/bin/env PHP_OPTIONS=\"-d sendmail_path=`which true`\" drush si -y --db-url=${DATABASE_URL/postgres/pgsql} --account-pass=1234"
+		"postdeploy": "cd docroot; rm sites/default/settings.php; /usr/bin/env PHP_OPTIONS=\"-d sendmail_path=`which true`\" drush si -y --db-url=${DATABASE_URL/postgres/pgsql} --account-pass=1234"
 	}
 }
