@@ -1,7 +1,7 @@
 version: '2'
 services:
     thunder:
-        build: .
+        build: .docker
         ports:
             - "8080:80"
         volumes:
@@ -10,11 +10,14 @@ services:
             - mysql
         environment:
             THUNDER_DB_HOST: mysql
+        command: sh .docker/docker-compose-install.sh
     mysql:
         image: mysql:5.7
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: thunder
-            MYSQL_DATABASE: thunder 
+            MYSQL_DATABASE: thunder
             MYSQL_USER: thunder
             MYSQL_PASSWORD: thunder
+        ports:
+            - "3306:3306"
