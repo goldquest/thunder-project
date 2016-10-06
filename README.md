@@ -9,7 +9,7 @@ the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
 
 ## Usage
 
-[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/goldquest/thunder-project/tree/feature/docker)
 
 First you need to install [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) and [Node](https://nodejs.org).
 
