@@ -1,5 +1,4 @@
 <?php
-require_once DRUPAL_ROOT . '/sites/default/default.settings.php';
 
 if($dockerDBHost = getenv('THUNDER_DB_HOST')) {
   $databases['default']['default'] = array(
