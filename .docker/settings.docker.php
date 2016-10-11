@@ -11,3 +11,6 @@ if($dockerDBHost = getenv('THUNDER_DB_HOST')) {
     'port' => '3306'
   );
 }
+
+if (empty($settings['hash_salt']))
+	      $settings['hash_salt'] = 'ZGVmYXVsdAAAAAEAAAAAADA/EKSAEgABBgAFAA==';
